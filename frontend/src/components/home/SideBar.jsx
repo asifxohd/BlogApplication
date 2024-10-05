@@ -12,7 +12,7 @@ import { cn } from "../../utils/lib/utils";
 import ConfirmationModal from './LogoutModal';
 import { toast } from "react-toastify";
 import axiosInstance from "../../axios/axiosIntrecepters";
-import { Sidebar, SidebarBody, SidebarLink } from "../sidebarComponents/sideutils";
+import { Sidebar, SidebarBody, SidebarLink } from "../SidebarComponents/Sideutils";
 
 export function SidebarDemo({ children }) {
     const [data, setData] = useState({
