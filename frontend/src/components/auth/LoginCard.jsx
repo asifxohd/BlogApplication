@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import { toast } from 'react-toastify';
@@ -9,6 +9,14 @@ import { loginUser } from '../../services/api/Login';
 const LoginCard = () => {
     const [error, setError] = useState('')
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const accessToken = localStorage.getItem('accessToken');
+        if (accessToken) {
+            navigate('home');
+        }
+    }, [navigate]);
+
     const formik = useFormik({
         initialValues: {
             username: '',
