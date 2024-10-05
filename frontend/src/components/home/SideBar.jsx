@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Sidebar, SidebarBody, SidebarLink } from "../sidebarComponents/sideutils";
 import {
     IconFilePencil,
     IconLogout2,
@@ -13,6 +12,7 @@ import { cn } from "../../utils/lib/utils";
 import ConfirmationModal from './LogoutModal';
 import { toast } from "react-toastify";
 import axiosInstance from "../../axios/axiosIntrecepters";
+import { Sidebar, SidebarBody, SidebarLink } from "../sidebarComponents/sideutils";
 
 export function SidebarDemo({ children }) {
     const [data, setData] = useState({
