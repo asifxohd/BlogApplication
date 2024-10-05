@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://13.232.227.33:8000/api/',
+  baseURL: 'https://www.cyclehubonline.shop/api/',
 });
 
 // Request interceptor
@@ -31,7 +31,7 @@ axiosInstance.interceptors.response.use(
       try {
         // Attempt to refresh the token
         const refreshToken = localStorage.getItem('refreshToken');
-        const response = await axios.post('http://13.232.227.33:8000/auth/token/refresh/', {
+        const response = await axios.post('https://www.cyclehubonline.shop/auth/token/refresh/', {
           refresh: refreshToken
         });
 

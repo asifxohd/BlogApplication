@@ -1,1 +1,1 @@
-export const BASE_URL = 'http://13.232.227.33:8000/'
+export const BASE_URL = 'https://www.cyclehubonline.shop'
