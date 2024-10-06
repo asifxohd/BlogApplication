@@ -166,8 +166,8 @@ Prod environment:```https://cyclehubonline.shop/swagger/```
 
 4. Clone your repository:
    ```
-   git clone [your-repo-url]
-   cd [your-repo-name]
+   git clone [repo-url]
+   cd [repo-name]
    ```
 
 5. Create a `.env` file in the backend directory with production settings.
