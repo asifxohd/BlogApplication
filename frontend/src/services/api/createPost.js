@@ -5,7 +5,7 @@ import axiosInstance from '../../axios/axiosIntrecepters';
 
 export const createPost = async (postData) => {
     try {
-        const response = await axiosInstance.post(`${BASE_URL}api/blogs/`, postData, {
+        const response = await axiosInstance.post(`api/blogs/`, postData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
             },
